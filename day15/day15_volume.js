@@ -25,14 +25,21 @@ boton.addEventListener('click', getVolume);
 
  function getVolume() {
     let resultado = 0;
-    resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3));
+    if(radio.value){
+        resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3));
+        boton.classList.add('button-active');
+        element.classList.add('esfera__res-active');
+        volumen.value = resultado;
+
+    }else{
+        alert('Ingresa el radio de la esfera');
+        radio.focus();
+    }
 
 
     
 
-    boton.classList.add('button-active');
-    element.classList.add('esfera__res-active');
-    volumen.value = resultado;
+    
 }
 
 
