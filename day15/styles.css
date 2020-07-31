@@ -52,18 +52,45 @@ body{
     color: black;
 }
 
+.figure__info a{
+    text-decoration: none;
+}
+
 .figure__info a button {
     background-color: tomato;
     cursor: pointer;
     border: none;
     color: white;
-    -webkit-box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
-    box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
-}
-
-.figure__info button{
     padding: .8em;
     border-radius: .5em;
+    display: block;
+    margin: 1.5em auto;
+    transition: all ease 900ms;
 }
+
+.figure__info a button:hover{
+    color: black;
+}
+
+.figure article:nth-child(1) button{
+    box-shadow: 5px 0 0 khaki inset, -6px 7px 15px -3px rgba(0,0,0,0.75);
+}
+.figure article:nth-child(1) button:hover{
+    box-shadow: 150px 0 0 khaki inset;
+}
+
+.figure article:nth-child(2) button{
+    box-shadow: 0 5px 0 khaki inset, -6px 7px 15px -3px rgba(0,0,0,0.75);
+}
+.figure article:nth-child(2) button:hover{
+    box-shadow: 0 150px 0 khaki inset;
+}
+
+.figure article:nth-child(3) button{
+    box-shadow: -5px 0 0 khaki inset, -6px 7px 15px -3px rgba(0,0,0,0.75), 5px 0 0 khaki inset;
+}
+.figure article:nth-child(3) button:hover{
+    box-shadow: -150px 0 0 khaki inset, 150px 0 0 khaki inset;
+}
+
 
