@@ -9,3 +9,83 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.hero{
+    background-color: tomato;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    z-index: 0;
+    padding: 5em 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.hero__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: teal/; */
+    height: auto;
+}
+
+.esfera{
+    width: 300px;
+    height: 300px;
+    background-color: khaki;
+    border-radius: 50%;
+    position: relative;
+}
+
+.esfera::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 40%;
+    height: 90px;
+    border-radius: inherit;
+    width: inherit;
+    background-color: rgb(88, 88, 88);
+    z-index: -1;
+}
+
+.esfera__volumen{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: teal; */
+    padding: 1em;
+    height: 200px;
+}
+
+
+
+
+label{
+    font-size: 2em;
+    font-family: 'Roboto';
+    color: white;
+    
+}
+
+input{
+    font-size: 1.5em;
+    outline: none;
+    background-color: transparent;
+}
+
+.button{
+    padding: .8em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+
+
+.esfera__res{
+    display: none;
+}
+
+
