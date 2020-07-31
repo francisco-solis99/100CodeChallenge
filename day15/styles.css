@@ -3,3 +3,67 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero{
+    height: 100vh;
+    background-color: #3f3d56;
+}
+
+.hero__title{
+    text-align: center;
+    color: white;
+    padding-top: .5em;
+    color:#fcd971;;
+}
+
+
+.container{
+    display: flex;
+    margin-top: 2em;
+    justify-content: center;  
+    /* background-color: salmon; */
+}
+
+.figure{
+    background-color: #fcd971;
+}
+
+.figure article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgb(27, 177, 177);
+}
+
+.figure__info{
+    width: 180px;
+    line-height: 90px;
+    text-align: center;
+    height: 180px;
+    background-color: salmon;
+}
+
+.figure__info h2{
+    color: black;
+}
+
+.figure__info a button {
+    background-color: tomato;
+    cursor: pointer;
+    border: none;
+    color: white;
+    -webkit-box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
+    box-shadow: -6px 7px 15px -3px rgba(0,0,0,0.75);
+}
+
+.figure__info button{
+    padding: .8em;
+    border-radius: .5em;
+}
+
