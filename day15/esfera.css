@@ -110,4 +110,14 @@ input{
     display: none;
 }
 
+.esfera__res input{
+    border: none;
+}
 
+.esfera__res-active{
+    display: initial;
+}
+
+.button-active{
+    display: none;
+}

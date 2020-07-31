@@ -12,3 +12,28 @@
 */
 
 
+const radio = document.querySelector('#radio');
+const volumen = document.querySelector('#volumen');
+const element = document.querySelector('#element');
+const boton = document.querySelector('.button');
+ console.log(radio.value);
+ console.log(element);
+
+
+boton.addEventListener('click', getVolume);
+
+
+ function getVolume() {
+    let resultado = 0;
+    resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3));
+
+
+    
+
+    boton.classList.add('button-active');
+    element.classList.add('esfera__res-active');
+    volumen.value = resultado;
+}
+
+
+
