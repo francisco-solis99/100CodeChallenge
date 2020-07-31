@@ -16,6 +16,7 @@ const radio = document.querySelector('#radio');
 const volumen = document.querySelector('#volumen');
 const element = document.querySelector('#element');
 const boton = document.querySelector('.button');
+const infoRadio = document.querySelector('.esfera__radio')
  console.log(radio.value);
  console.log(element);
 
@@ -29,7 +30,8 @@ boton.addEventListener('click', getVolume);
         resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3));
         boton.classList.add('button-active');
         element.classList.add('esfera__res-active');
-        volumen.value = resultado;
+        volumen.innerHTML = resultado;
+        infoRadio.classList.add('radio-active');
 
     }else{
         alert('Ingresa el radio de la esfera');
