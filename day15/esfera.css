@@ -73,14 +73,36 @@ input{
     font-size: 1.5em;
     outline: none;
     background-color: transparent;
+    border: 1px white solid
 }
 
 .button{
     padding: .8em;
-    font-size: 1em;
+    font-size: 1.2em;
     cursor: pointer;
+    background-color: rgb(245, 222, 94);
+    color: black;
+    position: relative;
+    border: 1px solid rgb(235, 138, 122);
 }
 
+/*TODO:Pendiente el boton con un buen estilo*/
+.button .left, .button .right{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 1px solid rgb(235, 138, 122);
+}
+
+.button .left{
+    top: 0;
+    left: -20px;
+}
+
+.button .right{
+    bottom: 0;
+    right: -20px;
+}
 
 
 
