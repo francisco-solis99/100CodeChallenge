@@ -27,7 +27,7 @@ boton.addEventListener('click', getVolume);
  function getVolume() {
     let resultado = 0;
     if(radio.value){
-        resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3));
+        resultado = (4/3)*(Math.PI)*(Math.pow(radio.value,3)).toFixed(3);
         boton.classList.add('button-active');
         element.classList.add('esfera__res-active');
         volumen.innerHTML = resultado;
