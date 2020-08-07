@@ -50,6 +50,13 @@ body{
     cursor: pointer;
     padding: 0 10px;
     border: none;
+    outline: none;
+    transition: all 500ms ease-in;
+}
+
+.calc__container button:not(.calc__result):hover{
+    background-color: #99b898;
+    transform: scale(1.1);
 }
 
 
@@ -61,6 +68,7 @@ body{
     border-radius: .4em;
     cursor: initial;
     border: none;
+    outline: none;
 }
 
 .calc__container button:nth-child(2){
