@@ -21,13 +21,6 @@
         }
     }
 
-    // function addValue(value){
-    //     let cache = 0;
-    //     if(i === 1){
-    //         resultado.innerHTML +=  value;
-    //     }
-    // }
-
 
 
     // queyselector !== getelementByClassName
